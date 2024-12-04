@@ -24,6 +24,15 @@
     width: 70px;
     height: 70px;
 }
+.Login{
+    position: relative;
+    margin-right: 2px;
+    margin-left: 70px;
+    height: 35px;
+    width: 100px;
+    border-radius: 30px;
+    border: 1;
+}
 .navlinks{
     flex: 1;
     text-align: right;
@@ -32,6 +41,7 @@
 .navlinks ul li{
     list-style: none;
     display: inline-block;
+    margin: 10px;
     padding: 8px;
     position: relative;
 }
@@ -49,4 +59,15 @@
 }
 .navlinks ul li:hover::after{
     width: 100%;
+}
+button{
+    font-size: 15px;
+    padding: 8px;
+    margin-right: 230px;
+    padding: 5px;
+    border-color: #fff;
+    color: #fff;
+    background-color: rgba(0,0,0,0);
+    width: 400px;
+    height: 35px;
 }
