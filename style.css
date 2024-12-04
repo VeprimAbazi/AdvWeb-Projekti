@@ -17,12 +17,14 @@
     display: flex;
     padding: 2% 6%;
     align-items: center;
+    vertical-align: top;
     
 }
 .navigationbar img{
     
     width: 70px;
     height: 70px;
+    vertical-align: top;
 }
 .Login{
     position: relative;
@@ -32,22 +34,26 @@
     width: 100px;
     border-radius: 30px;
     border: 1;
+    vertical-align: top;
+    align-items: end;
 }
 .navlinks{
     flex: 1;
     text-align: right;
+    vertical-align: top;
     
 }
 .navlinks ul li{
     list-style: none;
     display: inline-block;
-    margin: 10px;
-    padding: 8px;
+    padding: 12px;
     position: relative;
+
 }
 .navlinks ul li a{
     color: #fff;
     text-decoration: none;
+
 }
 .navlinks ul li::after{
     content: "";
@@ -55,7 +61,7 @@
     height: 2px;
     background: #ffffff;
     display: block;
-    margin: auto;
+
 }
 .navlinks ul li:hover::after{
     width: 100%;
@@ -63,11 +69,12 @@
 button{
     font-size: 15px;
     padding: 8px;
+    margin-left: 230px;
     margin-right: 230px;
-    padding: 5px;
     border-color: #fff;
     color: #fff;
     background-color: rgba(0,0,0,0);
     width: 400px;
     height: 35px;
+    vertical-align: top;
 }
