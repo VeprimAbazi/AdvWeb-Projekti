@@ -1,0 +1,60 @@
+.h1 {
+    font-family: 'Kristi', cursive;
+    /* text-align: center; */
+    
+    font-size: 120px;
+    margin-left: 120px;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+  }
+  
+  
+  .paragraph{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 230px;
+  }
+  .h{
+    margin-top: 40px;
+    margin-left: 90px;
+  }
+  
+  
+  
+  
+  
+  .button {
+    margin-left: 220px;
+    margin-top: 40px;
+    font-size: 34px;
+    border-radius: 45%;
+    padding: 15px;
+    background-color: white;
+    border-color: white;
+    box-shadow: none;
+    font-family: 'Kristi', cursive;
+    outline: none;
+    
+    
+
+  }
+  .button:hover {
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    font-family: 'Kristi', cursive;
+    outline: none;
+    
+
+  }
+  .container{
+    height: 100vh;
+   
+  }
+  
+
+ 
