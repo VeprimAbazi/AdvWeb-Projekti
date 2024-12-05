@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/fotot/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    background-size: cover;
+    display: flex;
+}
+
+.container {
+    width: 400px;
+    padding: 45px;
+    background-color: #8a8080;
+    color: #000000;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0 22px 17px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1c1515;
+    margin-bottom: 15px;
+    margin-top: auto;
+    font-size: 24px;
+}
+
+.form-field {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    color: black;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #333;
+}
+
+button {
+    width: 105%;
+    padding: 8px;
+    background-color: brown;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+.form-item{
+        font-size: 14px;
+        font-weight: normal;
+        font-style: italic;
+        font-variant: normal;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        padding-top: 1px;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.radio-group {
+    margin: 10px;
+    accent-color: #382e2e;
+   }
+   
+   .radio-group label {
+    margin-left: 10px;
+   }
+   
+   .radio-group input[type="radio"] {
+    display: none;
+   }
+   
+   .radio-group label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+   }
+   
+   .radio-group label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ddd;
+    border: 1px solid #ccc;
+   }
+   
+   .radio-group input[type="radio"]:checked+label:before {
+    background: #3a79ff;
+    border: 1px solid #3a79ff;
+    box-shadow: 0px 0px 10px rgba(58, 121, 255, 0.25);
+   }

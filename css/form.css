@@ -1,6 +1,12 @@
 body {
-    background-color: #e5b9b9;
     font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/fotot/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .Sign in {
@@ -10,16 +16,15 @@ body {
     color: #877e7e;
 }
 
-.content {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 17px;
-    background-color: #fff;
-    border-radius: 7px;
-    box-shadow: 0 22px 17px rgba(0, 0, 0, 0.1); 
-    margin-top: 100px;
-       
-}
+    .content {
+         width: 400px;
+         padding: 45px;
+         background-color: #8a8080;
+         color: #000000;
+         margin: 0 auto;
+         margin-top: 100px;
+         box-shadow: 0 22px 17px rgba(0, 0, 0, 0.1);
+    }
 h2 {
     text-align: center;
   
