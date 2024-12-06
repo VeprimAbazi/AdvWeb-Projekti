@@ -105,6 +105,8 @@ button:hover {
     position: relative;
     padding: 10px 25px;
     cursor: pointer;
+    align-self: start;
+    animation: backwards;
     display: inline-block;
    }
    
