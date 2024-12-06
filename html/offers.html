@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/footer.js"></script>
-    <script src="../js/loadHeader.js"></script>
-    
-    <title>Offers</title>
+    <title>Offers Page</title>
+    <link rel="stylesheet" href="/css/offers.css">
 </head>
 <body>
     <div id="headerContainer"></div>
-    <div id="large-th">
+    <script src="../js/loadHeader.js"></script>
+
+    <section class="section2">
+
+        <div id="discount-content"></div>
+    </section>
+    <div id="footerContainer"></div>
+    <script src="../js/footer.js"></script>
+    <script src="../js/offers.js"></script>
+    <script>
+        document.addEventListener('click', function(event) {
+          if (event.target.closest('.menu-toggle')) {
+              document.querySelector('.navElements').classList.toggle('active');
+              document.querySelector('.menu-toggle').classList.toggle('active');
+          }
+      });
+    </script>
   
     
 </body>
