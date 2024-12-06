@@ -37,7 +37,7 @@
     margin: 25px;
     padding: 10px 10px 0 10px;
     vertical-align: top;
-    transition: height 1s;
+    transition: height 1s, transform 1s;
   }
   /* star button */
   .book:after {
@@ -49,15 +49,28 @@
     top: -1.6cm;
     float: right;
   }
+  .book:hover {
+    height: 450px;
+    transform: scale(1.2); 
+  }
+  book.smaller {
+    width: 140px;
+    height: 240px;
+    transition: transform 1s; /* Added transform property */
+  }
+  .book:hover ~ .book:not(:hover) {
+    transform: scale(0.8); /* Adjust the scale factor as needed */
+  }
   
   .cover {
     border: 2px solid gray;
-    height: 80%;
+    height: 75%;
     overflow: hidden;
   }
   
   .cover img {
     width: 100%;
+    height: 100%;
   }
   
   .book p {

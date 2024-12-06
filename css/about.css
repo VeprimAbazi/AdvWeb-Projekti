@@ -1,13 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+    
+}
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)),url(/fotot/backgroundabout.jpg);
+    background-size: cover;
+    
 }
 .krejt{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/fotot/wallpaperflare.com_wallpaper\ \(1\).jpg);
-    background-size: cover;
     
     color: #fff;
     font-size: larger;    
@@ -21,7 +25,7 @@
     max-width: 50%;
 }
 .content{
-    background-color: rgba(238, 67, 0, 0.4);
+    background-color: rgba(221,23,23,0.7);
     border-radius: 30px;
     display: grid;
     place-items: center;
@@ -39,4 +43,53 @@
 .content p{
     padding: 9px;
     margin:8px auto;
+}
+span{
+    color:grey;
+}
+#svg{
+    width: 250x;
+    height: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        max-height: 100vh;
+
+    }
+    .krejt {
+        flex-direction: column;
+        text-align: center;
+        min-height: 78vh;
+        
+    }
+    .banner {
+        max-width: 90%;
+        min-height: fit-content; 
+    }
+    #svg{
+        height: 10px;
+        width: 100px;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 7px;
+        max-width: 90%; 
+    }
+
+    .content h1 {
+        font-size: 16px;
+        margin: 7px auto 4px auto;
+        padding: 4px;
+    }
+
+    .content h5,
+    .content p {
+        font-size: 8px; 
+        padding: 3px;
+        margin: 4px auto;
+    }
 }

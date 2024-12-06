@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/fotot/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/fotot/backgroundabout.jpg);
     background-size: cover;
    
 }
@@ -17,6 +17,9 @@ body {
     
     color: #fff;
 }
+h2{
+    text-shadow: 1px 1.5px grey;
+}
 .container{
     display: flex;
     width: 50%;
@@ -30,7 +33,9 @@ body {
     padding: 15px;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    outline-style: outset;
+    outline-color: red;
+    outline-width: 1.5px;
 }
 .content{
     position: relative;
@@ -113,12 +118,30 @@ width: 100%;
 
 
 @media (max-width: 768px) {
+    .form-field {
+        display: block;
+        
+    }
+    a[href^="tel"] {
+        color: inherit; 
+        text-decoration: none; 
+    }
+    .form-field .container {
+        margin: 0 auto; 
+    }
+    .info-box{
+        display: flex;
+        justify-content: left;
+    }
+    .info-box .text {
+        justify-content: center;
+        text-decoration: none;
+    }
     .all {
         flex-direction: column; 
     }
 
-    .container,
-    .komenti {
-        width: 100%; 
+    .form-field .komenti{
+        margin: 0 auto;
     }
 }
