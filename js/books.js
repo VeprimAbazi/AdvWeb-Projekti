@@ -131,3 +131,34 @@ var books = [
     }
 
   ]
+  populateDom(books)
+  
+  function populateDom(books) {
+      var output = '';
+      books.forEach((book)=> output += "<div class = 'book read'>"  +
+                                         "<div class = 'cover'>" + 
+                                           "<img src=" + book.image + ">" +
+                                         "</div>" + 
+                                         "<div class = 'description'>" + 
+                                           "<p class = 'title'>" + book.title + "<br>" +
+                                             "<span class = 'author'>" + book.author + "</span></p>" +
+                                         "</div>" + 
+                                       "</div>"
+                    )
+
+      document.getElementById('list-th').innerHTML = output;
+  }
+
+  function filterBooks() {
+    // Get the value from the input field
+    var search = document.getElementById("textInput").value.toLowerCase();
+    
+    if(search != '') {
+      var filteredBooks = books.filter(book => book.title.toLowerCase().startsWith(search))
+      populateDom(filteredBooks)
+
+      return 
+    }
+
+    populateDom(books)
+  }
