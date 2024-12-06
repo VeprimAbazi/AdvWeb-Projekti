@@ -1,52 +1,42 @@
-
 *{
-    margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    margin: 0;
 }
-.banner{
-    
-
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),
-    url(/fotot/wallpaperflare.com_wallpaper\ \(1\).jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.krejt{
     display: flex;
-    align-items: center; 
-    justify-content: center; 
-}
-.content {
-    background-image: radial-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url(/fotot/book.jpg);
-    background-size:cover;  
-    border: 2px solid #ff7c02;
-    border-radius: 60px;
-    text-align: center; 
-    height: 400px;
-    max-height:95%;
-    width: 600px;
-    max-width: 95%;
-    padding: 80px;
-    color: #fff;
-}
-
-
-
-.content h1{
-    font-size: 40px;
-    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/fotot/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    background-size: cover;
     
+    color: #fff;
+    font-size: larger;    
+}
+.banner{    
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+.content{
+    background-color: rgba(238, 67, 0, 0.4);
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    margin: 30px;
+    padding: 15px;
+}
+.content h1{
+    margin: 25px auto 8px auto;
+    padding: 9px;
 }
 .content h5{
-    font-size: 30px;
-    color: #fff;
-    text-align: center;
-    padding: 8px;
+    padding: 9px;
+    margin:8px auto;
 }
 .content p{
-    padding: 15px;
-    font-size:15px ;
-    color: #fff;  
+    padding: 9px;
+    margin:8px auto;
 }

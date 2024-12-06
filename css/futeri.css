@@ -1,0 +1,43 @@
+.body{
+    margin: 0;
+    padding: 0;
+    }
+    
+    .futeri{
+        background-color:rgb(223, 22, 22);
+        color: #fff;    
+        text-align: center;
+        max-height:100vh ;    
+    }
+    .table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        font-family: 'Open Sans' sans-serif;
+    }
+    .table a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .table p {
+        color:white;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    .table ul li{
+    
+        display: inline-block;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img{
+        width: 30px;
+        margin: 0 15px;
+    }
+    .table img{
+        opacity: 1;
+    }

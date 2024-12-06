@@ -4,29 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT</title>
-    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="../js/footer.js"></script>
+
 </head>
 <body>
-    <div class="header"></div>
-        <div class="container">
-            <div class="content">
-                <h2>Contact us</h2>
-            </div>
-            <div class="box">
-                <div class="icon"></div>
-                <div class="text">
-                    <h3>Phone</h3>
-                    <p>+383 45 432 321</p>
+    <div id="headerContainer"></div>
+    <script src="../js/loadHeader.js"></script>
+        <div class="all">
+        <div class="form-field">
+            <div class="container">
+                <div class="kontaktet">
+                <div class="content"> .
+                    <h2>Contact us</h2>
+                </div>
+            <div class="contact-info">               
+                 <div class="info-box">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+383 45 432 321</p>
+                        </div>
+                </div>
+                
+                <div class="info-box">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>Openlibrary@gmail.com</p>
+                        </div>
+                </div>
+                
+                <div class="info-box">
+                    <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                        <div class="text">
+                            <h3>Facebook</h3>
+                            <p>Openlibrary</p>
+                        </div>
+                    </div>
+                <div class="info-box">
+                    <div class="icon"><i class="fab fa-instagram"></i></div>
+                        <div class="text">
+                            <h3>Instagram</h3>
+                            <p>Open Library</p>
+                        </div>
+                    </div>
+                 </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="icon"></div>
-                <div class="text">
-                    <h3>Email</h3>
-                    <p>Openlibrary@gmail.com</p>
+            <div class="komenti">
+                <div class="form-komenti">
+                    <form action="">
+                    <div class="inputbox">
+                        <input type="text" placeholder="Name" required class="Data" id="name">
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" placeholder="Last Name" class="Data" id="lastname">
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" placeholder="E-mail" required class="Data" id="email">
+                    </div>
+                    <div class="inputbox">
+                        <textarea name="freefrom" id="komenti" cols="30" rows="10" placeholder="Enter comment here..." required></textarea>
+                    </div>
+                    <div class="inputbox">
+                        <div class="submitreset">
+                            <input type="submit" value="Submit" id="submit">
+                            <input type="reset" value="Reset" id="submit">
+                        </div>
+                    </div>
+                </form>
                 </div>
             </div>
         </div>
     </div>
+        <div id="footerContainer"></div>
 </body>
 </html>
