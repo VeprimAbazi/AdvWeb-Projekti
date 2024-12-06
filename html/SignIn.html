@@ -7,28 +7,40 @@
     <link rel="stylesheet" href="/css/SignIn.css">
 </head>
 <body>
-    <form action="">
+    <div class="signin-form">
+        <div class="content1">
+            <h2>Welcome to Open Library!</h2>
+            <p id="paragraf">Unlock a world of knowledge with a click. Explore our digital shelves filled with e-books, audiobooks, and resources. Dive into learning, discovery, and endless stories from anywhere, anytime. Join us on this journey of exploration and enlightenment.
+            <br><br>
+            </p><p id="paragraf">
+            Happy reading!
+            </p>
+        </div>
+    
+    <form action="/html/home.html">
     <body>
-        <div class="Sign in"></div>
         <div class="content">
             <h2>Sign In</h2>
-                    <div class="inputBox">
-                        <input type="email" placeholder="Email" id="emailpassword" autocomplete="on" required>
-                    </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="Email" id="emailpassword" autocomplete="on" required>
+                </div>
                 <div class="inputBox">
                     <input type="password" placeholder="Password" required>
                 </div>
                 <div class="inputBox1">
-                    <input type="checkbox" name="check" id="inputBox" required>
-                    <label for="inputBox">Remeber me</label>
+                    <input type="checkbox" name="check" id="inputBox" >
+                    <label for="inputBox">Remember me</label>
+                    
                 </div>
                 <div class="inputBox">
-                    <a href="/html/home.html"> <input type="button" value="Login" id="submit"></a>
+                    <input type="submit" value="Login" id="submit">
                 </div>
-                <h5>Don't have an account <a href="/html/SignUp.html">Sign Up here</a></h5>
+                <h5>Don't have an account? &nbsp;<a href="/html/SignUp.html">Sign Up here</a></h5>
               </div>  
+
         </div>
     </form>
+    
+</div>
     </body>
-</body>
 </html>

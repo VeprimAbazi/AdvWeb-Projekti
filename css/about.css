@@ -1,95 +1,75 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    
+
 }
+
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)),url(/fotot/backgroundabout.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(/fotot/backgroundabout.jpg);
     background-size: cover;
-    
+
 }
-.krejt{
+
+.krejt {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     color: #fff;
-    font-size: larger;    
+    font-size: medium;
 }
-.banner{    
+
+.banner {
     min-height: 100vh;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 50%;
 }
-.content{
-    background-color: rgba(221,23,23,0.7);
+
+.content {
+    background-color: rgba(221, 23, 23, 0.7);
     border-radius: 30px;
     display: grid;
     place-items: center;
     margin: 30px;
+    margin-top: 150px;
     padding: 15px;
 }
-.content h1{
+
+.content h1 {
     margin: 25px auto 8px auto;
     padding: 9px;
 }
-.content h5{
+
+.content h5 {
     padding: 9px;
-    margin:8px auto;
+    margin: 8px auto;
 }
-.content p{
+
+.content p {
     padding: 9px;
-    margin:8px auto;
+    margin: 8px auto;
 }
-span{
-    color:grey;
+
+span {
+    color: rgb(221, 220, 220);
 }
-#svg{
-    width: 250x;
+
+#svg {
+    width: 250px;
     height: 10px;
 }
 
 @media screen and (max-width: 768px) {
-    body{
-        max-height: 100vh;
+    .krejt{
+        width: 100%;
+        font-size: smaller;
 
     }
-    .krejt {
-        flex-direction: column;
-        text-align: center;
-        min-height: 78vh;
-        
+    .krejt p{
+        font-size: 10px;
     }
-    .banner {
-        max-width: 90%;
-        min-height: fit-content; 
-    }
-    #svg{
-        height: 10px;
-        width: 100px;
-    }
-    .content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 7px;
-        max-width: 90%; 
-    }
-
-    .content h1 {
-        font-size: 16px;
-        margin: 7px auto 4px auto;
-        padding: 4px;
-    }
-
-    .content h5,
-    .content p {
-        font-size: 8px; 
-        padding: 3px;
-        margin: 4px auto;
+    .content{
+        margin-top: 70px;
     }
 }

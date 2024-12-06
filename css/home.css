@@ -1,38 +1,66 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
     font-size: larger;
     line-height: 1.3;
-    background-color:rgb(255, 255, 245);
-  }
-  header {
-    background-color: #f4f4f4; 
-    padding: 80px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;    
+    background-color: rgb(255, 255, 245);
+    margin: 0;
+    padding: 0;
 }
-h1 {
-    margin-bottom: 10px;
-}
-.features {
-    display: block;
-    justify-content: space-around;
-    margin: 40px 81px;
 
+.features {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: 0px;
 }
-table {
-    border-spacing:0 100px ;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-#video1{
-    width: 900px;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#txt{
+    background-color: #f4f4f4;
+}
+#txt h1{
+    padding-top: 10%;
+}
+#txt h4{
+    padding-bottom: 5%;
+}
+
+video {
+    width: 100%;
+    height: auto;
     border-radius: 15px;
 }
-.celula2{
-    padding: 130px;
-}
-.darkMode{
-    background-color: black;
-    color: white;
-}
-  
 
- 
+/* Adjust styles for smaller screens (mobiles and laptops) */
+@media only screen and (max-width: 768px) {
+    .col-md-6 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    /* Change the order of the second row for mobile */
+    .row:nth-child(2) .col-md-6:first-child {
+        order: 2;
+    }
+
+    .row:nth-child(2) .col-md-6:last-child {
+        order: 1;
+    }
+    .txt h1{
+        padding-top: 17%;
+    }
+}

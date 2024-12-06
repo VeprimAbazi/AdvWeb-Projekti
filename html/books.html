@@ -7,14 +7,14 @@
   <script src="../js/loadHeader.js"></script>
   <script src="../js/footer.js"></script>
   <script src="../js/loadshigjeta.js"></script>
-  <link rel="stylesheet" href="/css/books.css">
+  <link rel="stylesheet" href="../css/books.css">
 </head>
 <body>
   <div id="headerContainer"></div>
 
   <div id="large-th">
-    <div class="container">
-      <h1>January Books</h1>
+    <div class="kontinier">
+      <h1 style="color: black;font-size: 40px; margin-top: 100px;">December Books</h1>
       <br>
       <div class="searchbar">
         <input type="text" id="textInput" placeholder="Type something..." oninput="filterBooks()">
@@ -37,6 +37,14 @@
           document.querySelector('.menu-toggle').classList.toggle('active');
       }
   });
+  </script>
+  <script>
+    var z = 0;
+    function myfunction(){
+        var x = document.body;
+        x.classList.toggle("darkMode");
+
+    }
   </script>
 </body>
 </html>

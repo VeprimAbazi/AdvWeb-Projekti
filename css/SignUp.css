@@ -1,10 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:flex;
     justify-content: center;
     background: rgb(255,151,151);
-    background: linear-gradient(0deg, rgba(255,151,151,1) 0%, rgba(255,255,255,1) 100%);
-    height: 900px;
+    background: linear-gradient(0deg, rgb(212, 212, 212) 0%, rgba(255,255,255,1) 100%);
+    height: 100vh;
+    margin: 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     
 }
 .krejt{
@@ -12,10 +14,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 500px;
 }
-
 .container {
-    padding: 80px;
+    padding: 10%;
     border:1px solid red;
     border-radius:14px;
     box-shadow: 0 22px 17px rgba(0, 0, 0, 0.1);
@@ -34,6 +36,7 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-bottom: 16px;
+
 }
 
 label {
@@ -46,8 +49,7 @@ label {
     padding: 9px;
 }
 
-
-input, select {
+input, select{
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
@@ -60,7 +62,7 @@ input:focus, select:focus {
     border-color: #333;
 }
 
-input[type="button"] {
+input[type="submit"] {
     width: 100%;
     padding: 8px;
     background-color: red;
@@ -89,18 +91,19 @@ input[type="button"] {
 button:hover {
     background-color: darkred;
 }
-
 .radio-group {
     margin-bottom:15px ;
     accent-color:red;
     justify-content: space-between;
-}
-.radio-group input[type="radio"] {
+    
+   }
+   .radio-group input[type="radio"] {
     display: none;
-}
+   }
+   
    .radio-group label {
     position: relative;
-    padding-left: 25px;
+    padding: 10px 25px;
     cursor: pointer;
     display: inline-block;
    }
@@ -123,4 +126,11 @@ button:hover {
     border: 1px solid red;
     box-shadow: 0px 0px 10px rgba(58, 121, 255, 0.25);
    }
-      
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10%;
+    }
+    .krejt{
+        width: 100%;
+    }
+}
