@@ -63,4 +63,44 @@ nav {
   ul{
     width: 100%;
   }
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  .navElements {
+      display: none;
+  }
+
+  .navElements.active {
+      display: block;
+  }
+
+  .menu-toggle.active .hamburger:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle.active .hamburger:nth-child(2) {
+      opacity: 0;
+  }
+
+  .menu-toggle.active .hamburger:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
  

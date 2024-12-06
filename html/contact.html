@@ -24,7 +24,7 @@
                     <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="text">
                             <h3>Phone</h3>
-                            <p>+383 45 432 321</p>
+                            <abbr title="+383 45 432 321" style="text-decoration: none;"><p>045 432 321</p></abbr>
                         </div>
                 </div>
                 
@@ -80,5 +80,13 @@
         </div>
     </div>
         <div id="footerContainer"></div>
+        <script>
+            document.addEventListener('click', function(event) {
+              if (event.target.closest('.menu-toggle')) {
+                  document.querySelector('.navElements').classList.toggle('active');
+                  document.querySelector('.menu-toggle').classList.toggle('active');
+              }
+          });
+          </script>
 </body>
 </html>

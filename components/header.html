@@ -11,8 +11,11 @@
 </head>
 <body>
     <nav>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
         <ul class="navElements">
-            <li><a href="../html/e-library.html">E-Library</a></li>
+            <li><a href="../html/home.html">Home</a></li>
             <li><a href="../html/books.html">Books</a></li>
             <li><a href="../html/offers.html">Offers</a></li>
             <li><a href="../html/contact.html">Contact Us</a></li>
@@ -20,5 +23,11 @@
             <li><a href="../html/SignIn.html">Log Out</a></li>
         </ul>
     </nav>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.navElements').classList.toggle('active');
+            document.querySelector('.menu-toggle').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

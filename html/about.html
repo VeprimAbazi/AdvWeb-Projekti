@@ -15,6 +15,9 @@
     <div class="banner">
          <div class="content">
          <h1>About us</h1>
+         <svg id="svg">
+            <line x1="0" y1="0" x2="1500" y2="0" style="stroke:yellow;stroke-width:2" />
+          </svg>
          <h5>Online <span>library</span></h5>
          <p>Welcome to our online library, where the captivating world of literature meets the convenience of the digital age.
              Established with a passion for knowledge and a commitment to fostering a love for reading, our virtual sanctuary is a haven for book enthusiasts and lifelong learners alike.
@@ -24,5 +27,13 @@
         <div id="shigjeta"></div>
     </div>
     <div id="footerContainer"></div>
+    <script>
+        document.addEventListener('click', function(event) {
+          if (event.target.closest('.menu-toggle')) {
+              document.querySelector('.navElements').classList.toggle('active');
+              document.querySelector('.menu-toggle').classList.toggle('active');
+          }
+      });
+      </script>
 </body>
 </html>

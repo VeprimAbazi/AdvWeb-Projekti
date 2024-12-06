@@ -7,12 +7,13 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <div class="container">
+    <div class="krejt">
+        <div class="container">
         <h1>Sign Up</h1>
         <form>
             <div class="form-field">
                 <label for="email"></label>
-                <input type="email" id="email" placeholder="Email" required>
+                <input type="email" id="email" placeholder="Email" autocomplete="on" required>
             </div>
             <div class="form-field">
                 <label for="password"></label>
@@ -24,20 +25,20 @@
             </div>
             <div class="form-field">
                 <label for="username"></label>
-                <input type="text" id="username" placeholder="Username" required>
+                <input type="text" id="username" placeholder="Username" autocomplete="on" required>
             </div>
-            <label for="name">Gender:</label>
+            <label for="gender">Gender:</label>
             <div class="radio-group">
-                <input type="radio" id="female" name="gender" value="female">
+                <input type="radio" id="female" name="gender">
                 <label for="female">Female</label>
                
-                <input type="radio" id="male" name="gender" value="male">
+                <input type="radio" id="male" name="gender">
                 <label for="male">Male</label>
                
-                <input type="radio" id="custom" name="gender" value="custom">
+                <input type="radio" id="custom" name="gender">
                 <label for="custom">Custom </label>
                </div>
-            <div> 
+               <div class="ditlindja"> 
                 <label for="birthday">Birthday:</label>
                 <div class="form-item">
                     <label for="birthday_month"></label>
@@ -45,9 +46,12 @@
                     <label for="birthday_day"></label>
                     <input type="number" id="birthday_day" name="birthday_day" min="1" max="31" placeholder="Day" required>
                     <label for="birthday_year"></label>
-                    <input type="number" id="birthday_year" name="birthday_year" placeholder="Year" required>
+                    <input type="number" id="birthday_year" name="birthday_year" placeholder="Year" min="1950" max="2024" required>
                 </div>
-            <button type="submit">Sign Up</button>
+                <div class="butoni">
+                    <a href="../html/home.html"><input type="button" value="Login" id="submit"></input></a>
+                </div>
+            </div>    
         </form>
     </div>
 </body>
