@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,11 +6,31 @@
   <title>Offers Page</title>
   <link rel="stylesheet" href="/css/offers.css"> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/snowfall.css"> 
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>-->
+<?php 
+session_start();
+// Check if a background color cookie is set
+if(isset($_COOKIE['bg_color'])) {
+    $bg_color = $_COOKIE['bg_color'];
+} else {
+    $bg_color = '#ffffff'; // Default background color
+}
 
-</head>
-<body>
+// If the form is submitted, set the background color cookie
+if(isset($_POST['submit'])) {
+    $bg_color = $_POST['bg_color'];
+    setcookie('bg_color', $bg_color, time() + (86400 * 30), "/"); // Set the cookie for 30 days
+}
+
+
+    $_SESSION['title']= "Offers";
+    include "../components/header.php";
+?>
+    <div id="snowfall"></div>
+
+    <script src="/js/app.js"></script>
     <div id="headerContainer"></div>
     <script src="../js/loadHeader.js"></script>
     <section class="section2">
@@ -49,8 +69,16 @@
     
     <div id="discount-content"></div>
   </section>
-  <div id="footerContainer"></div>
-  <script src="../js/footer.js"></script>
+  <style>
+        body {
+            background-color: <?php echo $bg_color; ?>;
+        }
+    </style>
+  <form method="post">
+        <label for="bg_color">Choose Background Color:</label><br>
+        <input type="color" id="bg_color" name="bg_color" value="<?php echo $bg_color; ?>"><br><br>
+        <input type="submit" name="submit" value="Change Color">
+    </form>
  
   <script src="../js/offers.js"></script>
     <script>
@@ -69,5 +97,6 @@
   
       }
     </script>
-</body>
-</html>
+<?php 
+include "../components/footer.php"
+?>

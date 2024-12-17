@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,7 +38,7 @@
 </head>
 
 
-<body class="body">
+<body class="body"> -->
     
         <div class="futeri">
             <div class="futeri1">

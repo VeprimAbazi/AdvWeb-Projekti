@@ -1,17 +1,21 @@
-<!DOCTYPE html>
+<!--DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT</title>
+    <title>CONTACT</title>--> 
+<?php 
+session_start();
+    $_SESSION['title']= "Contact";
+    include "../components/header.php";
+?>
     <link rel="stylesheet" href="../css/Contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <script src="../js/footer.js"></script>
+    <link rel="stylesheet" href="/css/snowfall.css"> 
 
-</head>
-<body>
-    <div id="headerContainer"></div>
-    <script src="../js/loadHeader.js"></script>
+    <div id="snowfall"></div>
+
+    <script src="/js/app.js"></script>
+  
         <div class="all">
         <div class="form-field">
             <div class="kontinier">
@@ -114,7 +118,6 @@
             </div>
         </div>
     </div>
-        <div id="footerContainer"></div>
         <script>
             document.addEventListener('click', function(event) {
               if (event.target.closest('.menu-toggle')) {
@@ -123,5 +126,6 @@
               }
           });
           </script>
-</body>
-</html>
+<?php
+include "../components/footer.php";
+?>

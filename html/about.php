@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,14 @@
     <script src="../js/footer.js"></script>
     <script src="../js/loadshigjeta.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <title>ABOUT</title>
+    <link rel="stylesheet" href="/css/snowfall.css"> 
+    <title>ABOUT</title>-->
+<?php
+session_start();
+    $_SESSION['title']= "About US";
+    include "../components/header.php";
+?>
+    <link rel="stylesheet" href="../css/about.css">
     <style>
         #myDiv {
         width: 300px; 
@@ -28,8 +35,10 @@
         transition: background-color 0.2s;
         }
      </style>
-</head>
-<body>
+
+    <div id="snowfall"></div>
+
+    <script src="/js/app.js"></script>
     
     <div id="headerContainer"></div>
 
@@ -59,7 +68,7 @@
 <div class="krejt">
 <button id="btnSlide" style="background-color: rgb(176,35,34);" >Team</button>
 <div id="myDiv">Worked on this project:<br>
-     Osman Osmanaj,Endrit Tha&ccedili,<br>Urtim Shehi,Taulant Qela
+    Veprim Abazi<br>Anton Noci
 </div>
 </div>
 <script>
@@ -104,5 +113,6 @@
     }
   </script>
     
-</body>
-</html>
+<?php
+include "../components/footer.php";
+?>

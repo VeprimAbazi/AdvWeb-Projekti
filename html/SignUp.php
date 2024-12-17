@@ -10,11 +10,11 @@
     <div class="krejt">
     <div class="container">
         <h1>Sign Up</h1>
-        <form action="/html/home.html">
+        <form>
             <div class="form-field">
                 <label for="email"></label>
                 <input type="email" id="email" placeholder="Email" autocomplete="on" required>
-            </div>
+            </div>s
             <div class="form-field">
                 <label for="password"></label>
                 <input type="password" id="password" placeholder="Password" required>
@@ -59,55 +59,34 @@
     </div>
 </div>
 <script>
-    function checkYear(year) {
-        if (year < 1950) {
-            throw new Error('Year must be 1950 or later');
-        } else {
-            return `The year ${year} is valid.`;
-        }
+    function validateForm(){
+    let inputUsername = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+    let confirmPassword = document.getElementById('confirmPassword').value;
+    let inputYear = document.getElementById('birthday_year').value;
+    // Regular expression patterns
+    let usernamePattern = /^[a-zA-Z0-9_]{5,}$/; // Username must be alphanumeric and at least 5 characters long
+    let passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/; // Password must contain at least one digit, one lowercase, one uppercase, one special character, and be at least 8 characters long
+    let yearPattern = /^(19\d{2}|20(?:[0-1]\d|20))$/; // Year must be between 1900 and 2099
+    // Validation
+    if (!usernamePattern.test(inputUsername)) {
+        alert('Username must be alphanumeric and at least 5 characters long.');
+        return false; 
     }
-
-    function validateForm() {
-        try {
-            let inputUsername = document.getElementById('username').value;
-            if (inputUsername.length <= 5) {
-                throw new Error('Username must be longer than 5 characters.');
-            } else {
-                console.log(`The username "${inputUsername}" is valid.`);
-            }
-            let password = document.getElementById('password').value;
-            let confirmPassword = document.getElementById('confirmPassword').value;
-            if (password !== confirmPassword) {
-                throw new Error('Passwords do not match.');
-            } else {
-                console.log('Passwords match.');
-            }
-            let inputYear = document.getElementById('birthday_year').value;
-            let result = checkYear(inputYear);
-            console.log(result);
-        } catch (error) {
-            console.error('Error:', error.message);
-            switch(error.message) {
-                case 'Username must be longer than 5 characters.':
-                    document.getElementById('usernameError').innerHTML = error.message;
-                    document.getElementById('passwordError').innerHTML = '';
-                    document.getElementById('birthdayError').innerHTML = '';
-                    break;
-                case 'Passwords do not match.':
-                    document.getElementById('passwordError').innerHTML = error.message;
-                    document.getElementById('usernameError').innerHTML = '';
-                    document.getElementById('birthdayError').innerHTML = '';
-                    break;
-                case 'Year must be 1950 or later':
-                    document.getElementById('birthdayError').innerHTML = error.message;
-                    document.getElementById('usernameError').innerHTML = '';
-                    document.getElementById('passwordError').innerHTML = '';
-                    break;
-                default:
-                    break;
-            }
-        }
+    if (!passwordPattern.test(password)) {
+        alert('Password must contain at least one digit, one lowercase, one uppercase, one special character, and be at least 8 characters long.');
+        return false; 
     }
+    if (password !== confirmPassword) {
+        alert('Passwords do not match.');
+        return false;
+    }
+    if (!yearPattern.test(inputYear)) {
+        alert('Year must be between 1950 and 2024.');
+        return false; 
+    }
+    return true;
+}
 </script>
 </body>
 </html>
