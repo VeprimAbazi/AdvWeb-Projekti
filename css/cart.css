@@ -1,0 +1,15 @@
+
+.display{
+    margin-top: 100px;
+    max-height: fit-content;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

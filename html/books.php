@@ -1,44 +1,57 @@
-<!--DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BOOKS</title>
-  <script src="../js/loadHeader.js"></script>
-  <script src="../js/footer.js"></script>
-  <script src="../js/loadshigjeta.js"></script>
-  <link rel="stylesheet" href="../css/books.css">-->
-  <?php 
-  session_start();
-  $_SESSION['title']="Books";
-  include "../components/header.php";
-  ?>
-  
-  < <div id="large-th">
+<?php 
+session_start();
+
+    $_SESSION['title']= "Books";
+    include "../components/header.php";
+    require "../ErrorHandle/errorHandler.php";
+?>
+
+  <div id="large-th">
     <div class="kontinier">
-      <h1 style="color: black;font-size: 40px; margin-top: 100px;">Books In Stock</h1>
+      <h1 style="font-size: 40px; margin-top: 100px;">Books In Stock</h1>
       <br>
-    <form method="POST">
-        <label for="sort">Sort by:</label>
-        <select name="sort" id="sort">
-            <option value="title">Name</option>
-            <option value="price">Price</option>
-        </select>
-        <input type="submit" value="Sort">
-    </form>
+      <div class="dropdown">
+   
+    </div>
       <div class="choose">
         <a href="#list-th"><i class="fa fa-th-list" aria-hidden="true"></i></a>
         <a href="#large-th"><i class="fa fa-th-large" aria-hidden="true"></i></a>
       </div>
       <div id="list-th">
       <?php
-      include "../js/bookss.php"
+      include "../js/books.php";
+      trigger_error("Ky është një gabim testues!!", E_USER_WARNING);
       ?>
+     <script>
+function addToCart(bookTitleId) {
+    var formData = new FormData(document.getElementById('add-to-cart-form-' + bookTitleId)); // Get the form data
+
+    // Send the form data using AJAX
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'add_to_cart.php', true);
+    xhr.onload = function() {
+        if (xhr.status >= 200 && xhr.status < 300) {
+            // Request was successful, handle the response here if needed
+            console.log(xhr.responseText);
+        } else {
+            // Request failed, handle errors here
+            console.error(xhr.statusText);
+        }
+    };
+    xhr.onerror = function() {
+        // Request failed, handle errors here
+        console.error('Request failed');
+    };
+    xhr.send(formData);
+}
 </script>
+
       </div>
     </div>
   </div>
- <div id="shigjeta"></div>
+
+  <div id="shigjeta"></div>
+  
   <script>
     document.addEventListener('click', function(event) {
       if (event.target.closest('.menu-toggle')) {
@@ -52,9 +65,12 @@
     function myfunction(){
         var x = document.body;
         x.classList.toggle("darkMode");
-
+       
     }
   </script>
-<?php 
+<div style="display: flex; justify-content: center;">
+  <a href="BooksApi.php">The Book you were looking for isn't here</a>
+</div>
+    <?php
 include "../components/footer.php"
 ?>

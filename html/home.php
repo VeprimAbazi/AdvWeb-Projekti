@@ -1,23 +1,22 @@
 <?php include "../components/header.php"; ?>
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/snowfall.css"> 
-    <script src="../js/footer.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/futeri.css">
     <title>OPENLIBRARY</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <div id="snowfall"></div>
-
-    <script src="/js/app.js"></script>
-    <div id="headerContainer"></div>
-    <script src="../js/loadHeader.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.navElements').classList.toggle('active');
+            document.querySelector('.menu-toggle').classList.toggle('active');
+        });
+    </script>
     
     <section class="features">
         <div id="txt">
@@ -29,7 +28,7 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-6">
                     <video id="video1" autoplay loop>
-                        <source src="/video/video3.mp4">
+                        <source src="../video/video3.mp4">
                     </video>
                 </div>
                 <div class="col-md-6">
@@ -43,14 +42,14 @@
                 </div>
                 <div class="col-md-6">
                     <video id="video2" autoplay loop>
-                        <source src="/video/video2.mp4">
+                        <source src="../video/video2.mp4">
                     </video>
                 </div>
             </div>
              <div class="row justify-content-center align-items-center">
                 <div class="col-md-6">
                     <video id="video1" autoplay loop>
-                        <source src="/video/video1.mp4">
+                        <source src="../video/video1.mp4">
                     </video>
                 </div>
                 <div class="col-md-6">  
@@ -88,8 +87,10 @@
         }
         }
       </script>
-      <div id="footerContainer"></div>
 </body>
 </html>
+<?php
+include "../components/footer.php"
+?>
    
   

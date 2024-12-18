@@ -1,0 +1,44 @@
+.divider{
+    height: 100px;
+}
+
+#results{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1024px;
+    margin:4rem auto;
+gap: 2rem;
+min-height: 41vh;
+}
+#searchForm{
+    display: flex;
+    justify-content: center;
+}
+
+#searchForm input{
+    padding: 0.7rem;
+    outline: none;
+}
+#searchForm button{
+    padding: 0 1rem;
+    outline: none;
+    border: 1px solid #000;
+    background: #dd1717;
+}
+.bookBox{
+    width: calc(33% - 1.12rem);
+    text-align: center;
+    border: 1px solid #aaa;
+    padding: 1rem
+}
+.bookBox h3{
+    font-size: 1rem;
+    min-height: 57px;
+    margin-bottom: 1rem;
+}
+.bookBox img{
+    width: 200px;
+}
+.readMore{
+    padding: 1rem;
+}

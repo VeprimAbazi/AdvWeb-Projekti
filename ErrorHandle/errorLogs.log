@@ -76,3 +76,33 @@ Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\
 Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\Web2\html\books.php 
 Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\Web2\html\books.php 
 Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\Web2\html\books.php 
+Gabim [2]: include(../js/bookss.php): Failed to open stream: No such file or directory në linjën 22 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Gabim [2]: include(): Failed opening '../js/bookss.php' for inclusion (include_path='C:\xampp\php\PEAR') në linjën 22 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Gabim [2]: include(../js/bookss.php): Failed to open stream: No such file or directory në linjën 22 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Gabim [2]: include(): Failed opening '../js/bookss.php' for inclusion (include_path='C:\xampp\php\PEAR') në linjën 22 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Gabim [2]: include(../js/bookss.php): Failed to open stream: No such file or directory në linjën 22 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Gabim [2]: include(): Failed opening '../js/bookss.php' for inclusion (include_path='C:\xampp\php\PEAR') në linjën 22 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Gabim [2]: require(connectdb.php): Failed to open stream: No such file or directory në linjën 3 në file C:\xampp\htdocs\AdvWeb-Projekti\js\books.php 
+Gabim [2]: require(dbconnection.php): Failed to open stream: No such file or directory në linjën 3 në file C:\xampp\htdocs\AdvWeb-Projekti\js\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 
+Paralajmërim [512]: Ky është një gabim testues!! në linjën 23 në file C:\xampp\htdocs\AdvWeb-Projekti\html\books.php 

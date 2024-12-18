@@ -1,162 +1,208 @@
 nav{
-    position: fixed;
-    top: 0;
-  }
+  position: fixed;
+  top: 0;
+}
+.kontinier {
+  margin: 0 auto;
+
+}
+.description{
+  justify-content: space-between;
+}
+#large-th{
+  display: flex;
+}
+.kontinier h1 {
+  margin-top: 100px;
+}
+.searchbar {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.searchbar input {
+  margin: auto 30px;
+  width: 30%;
+  padding: 9px;
+  border-radius: 15px;
+  border: 1px solid red;
+}
+
+.description .button {
+  height: 30px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+}
+ .button input{
+  height: 100%;
+  /* margin-top: 80%; */
+  max-height: 100%;
+  
+}
+.price{
+  position: relativec;
+  bottom: 0;
+  right: 0;
+}
+.choose {
+  width: 100%;
+  height: 40px;
+}
+.dropdown{
+  display: flex;
+  justify-content: center;
+}
+.dropdown #submiti{
+  margin: 5px;
+
+}
+.dropdown #sort{
+  padding: 4px;
+  margin: 5px;
+}
+#submiti{
+  margin: 5px;
+  padding: 4px;
+}
+#titulli{
+  margin: 5px;
+}
+.dropdown label{
+  margin: 5px;
+}
+.fa {
+  margin-right: 20px;
+  font-size: 30px;
+  color: gray;
+  float: right;
+}
+
+/******************************************
+Book stuff
+*******************************************/
+
+.book {
+  display: inline-block;
+  width: 230px;
+  height: 390px;
+  box-shadow: 0 0 20px #aaa;
+  margin: 25px;
+  padding: 10px 10px 0 10px;
+  vertical-align: top;
+  transition: height 1s, transform 1s; 
+}
+
+
+/* .book:after {
+  font-family: FontAwesome;
+  content: "\f006";
+  font-size: 35px;
+  position: relative;
+  left: -.1cm;
+  top: -1.6cm;
+  float: right;
+} */
+
+.book:hover {
+  height: 450px;
+  transform: scale(1.2); 
+}
+
+
+.book.smaller {
+  width: 140px;
+  height: 240px;
+  transition: transform 1s; 
+}
+
+
+.book:hover ~ .book:not(:hover) {
+  transform: scale(0.8); 
+}
+
+.cover {
+  border: 2px solid gray;
+  height: 75%;
+  overflow: hidden;
+}
+
+.cover img {
+  width: 100%;
+  height:100%
+}
+
+.book p {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.book .author {
+  font-size: 12px;
+}
+
+@media (max-width: 941px) {
   .kontinier {
-    margin: 0 auto;
-    max-width: 850px;
-    min-height: 3291px;
+    max-width: 700px;
   }
-  #large-th{
-    display: flex;
-  }
-  .kontinier h1 {
-    margin-top: 100px;
-  }
-  .searchbar {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-  }
-  
-  .searchbar input {
-    margin: auto 30px;
-    width: 30%;
-    padding: 9px;
-    border-radius: 15px;
-    border: 1px solid red;
-  }
-  
-  .choose {
-    width: 100%;
-    height: 40px;
-  }
-  
-  .fa {
-    margin-right: 20px;
-    font-size: 30px;
-    color: gray;
-    float: right;
-  }
-  
-  /******************************************
-  Book stuff
-  *******************************************/
-  
   .book {
-    display: inline-block;
-    width: 230px;
-    height: 390px;
-    box-shadow: 0 0 20px #aaa;
-    margin: 25px;
-    padding: 10px 10px 0 10px;
-    vertical-align: top;
-    transition: height 1s, transform 1s; 
+    margin: 49px;
   }
-  
-  
-  /* .book:after {
-    font-family: FontAwesome;
-    content: "\f006";
-    font-size: 35px;
-    position: relative;
-    left: -.1cm;
-    top: -1.6cm;
-    float: right;
-  } */
-  
-  .book:hover {
-    height: 450px;
-    transform: scale(1.2); 
+  .h1{
+    margin-top: 30px;
   }
-  
-  
-  .book.smaller {
-    width: 140px;
-    height: 240px;
-    transition: transform 1s; 
+}
+
+@media (max-width: 730px) {
+  .book {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
   }
-  
-  
-  .book:hover ~ .book:not(:hover) {
-    transform: scale(0.8); 
+  .searchbar input{
+    width: 60%;
   }
-  
-  .cover {
-    border: 2px solid gray;
-    height: 75%;
-    overflow: hidden;
-  }
-  
-  .cover img {
-    width: 100%;
-    height:100%
-  }
-  
-  .book p {
-    margin-top: 12px;
-    font-size: 16px;
-  }
-  
-  .book .author {
-    font-size: 12px;
-  }
-  
-  @media (max-width: 941px) {
-    .kontinier {
-      max-width: 700px;
-    }
-    .book {
-      margin: 49px;
-    }
-    .h1{
-      margin-top: 30px;
-    }
-  }
-  
-  @media (max-width: 730px) {
-    .book {
-      display: block;
-      margin: 0 auto;
-      margin-top: 50px;
-    }
-    .searchbar input{
-      width: 60%;
-    }
-  
-  }
-  
-  
-  
-  h1 {
-    color: gray;
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: -3px;
-  }
-  
-  
-  #list-th:target .book {
-    height: 100px;
-    width: 250px;
-    padding: 10px;
-    margin: 25px auto 25px auto;
-  }
-  
-  #list-th:target .cover {
-    width: 246px;
-  }
-  
-  #list-th:target img {
-    opacity: .1;
-  }
-  
-  #list-th:target p {
-    margin-top: -62px;
-    margin-left: 20px;
-  }
-  
-  
-  #large-th:target .book {
-    height: 390px;
-  }
+
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: -3px;
+}
+
+#list-th{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+#list-th:target .book {
+  height: 100px;
+  width: 250px;
+  padding: 10px;
+  margin: 25px auto 25px auto;
+}
+
+#list-th:target .cover {
+  width: 246px;
+}
+
+#list-th:target img {
+  opacity: .1;
+}
+
+#list-th:target p {
+  margin-top: -62px;
+  margin-left: 20px;
+}
+
+
+#large-th:target .book {
+  height: 390px;
+}
