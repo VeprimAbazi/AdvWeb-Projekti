@@ -41,7 +41,8 @@ nav{
   max-height: 100%;
   
 }
-.price{
+.text span #price{
+  text-decoration: none;
   position: relativec;
   bottom: 0;
   right: 0;

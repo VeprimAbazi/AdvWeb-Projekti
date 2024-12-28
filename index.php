@@ -7,37 +7,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     try {
-        $stmt = $pdo->prepare("SELECT id, password FROM users WHERE email = :email");
+        // Fetch user data based on email
+        $stmt = $pdo->prepare("SELECT id, password, role FROM users WHERE email = :email");
         $stmt->bindParam(':email', $email);
         $stmt->execute();
 
         if ($stmt->rowCount() > 0) {
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
             $hashed_password = $row['password'];
+            $role = $row['role'];
 
+            // Verify the password
             if (password_verify($password, $hashed_password)) {
+                // Set session variables
                 $_SESSION['user_id'] = $row['id'];
-                
+                $_SESSION['role'] = $role;
+
+                // Set a cookie if "Remember me" is checked
                 if (isset($_POST['remember'])) {
                     setcookie("user_id", $row['id'], time() + (86400 * 30), "/");
                 }
-                header("Location: ./html/home.php");
+
+                // Redirect based on role
+                if ($role === 'admin') {
+                    $_SESSION['admin_logged_in'] = true;
+                    header("Location: ./html/admin_dashboard.php"); // Admin Dashboard
+                } else {
+                    $_SESSION['user_logged_in'] = true;
+                    header("Location: ./html/home.php"); // Regular user home page
+                }
                 exit();
             } else {
-                echo "<script>
-                alert('Incorrect Password or email')
-                </script>";
+                echo "<script>alert('Incorrect Password or email');</script>";
             }
         } else {
-            echo "<script>
-                alert('Incorrect Password or email')
-                </script>";
+            echo "<script>alert('Incorrect Password or email');</script>";
         }
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

@@ -27,7 +27,6 @@ include "../components/header.php";
     <div id="discount-content">
         <?php
         include "../js/Offers.php";
-        populateDom($booksonsale);
         ?>
       
     </div>

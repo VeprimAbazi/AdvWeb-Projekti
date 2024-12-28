@@ -68,9 +68,9 @@ function addToCart(bookTitleId) {
        
     }
   </script>
-<div style="display: flex; justify-content: center;">
+<!--div style="display: flex; justify-content: center;">
   <a href="BooksApi.php">The Book you were looking for isn't here</a>
-</div>
+</!--div>
     <?php
 include "../components/footer.php"
 ?>

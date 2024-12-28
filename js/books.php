@@ -28,7 +28,7 @@ function populateDom($books)
             "<div class='text'>" .
             "<h2>" . htmlspecialchars($book['title']) . "</h2>" .
             "<h3>" . htmlspecialchars($book['author']) . "</h3>" .
-            "<span id='price'>" . htmlspecialchars($book['price']) . "</span>" .
+            "<span id='price' style='text-decoration:none;font-weight: bold; color: black;font-size ;'>" . htmlspecialchars($book['price']) . "</span>" .
             "</div>" .
             "<div class='button'>" .
             "<form id='add-to-cart-form-$bookTitleId' method='post'>" .

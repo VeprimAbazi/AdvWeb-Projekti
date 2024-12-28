@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/books.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../css/futeri.css">
     <link rel="stylesheet" href="../css/offers.css"> 
+
 
     <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Open+Sans:wght@300&family=Praise&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='../css/books.css' type='text/css' />
